@@ -1,0 +1,533 @@
+      program  ->  compoundstmt  
+      compoundstmt  ->  {  stmts  }  
+{
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  whilestmt  
+      whilestmt  ->  while  (  boolexpr  )  stmt  
+while
+(
+      boolexpr  ->  arithexpr  boolop  arithexpr  
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+      boolop  ->  >  
+>
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+)
+      stmt  ->  compoundstmt  
+      compoundstmt  ->  {  stmts  }  
+{
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  +  multexpr  arithexprprime  
++
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  -  multexpr  arithexprprime  
+-
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  ¦Å  
+      ¦Å
+}
+      stmts  ->  stmt  stmts  
+      stmt  ->  ifstmt  
+      ifstmt  ->  if  (  boolexpr  )  then  stmt  else  stmt  
+if
+(
+      boolexpr  ->  arithexpr  boolop  arithexpr  
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+      boolop  ->  >=  
+>=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+)
+then
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  +  multexpr  arithexprprime  
++
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+else
+      stmt  ->  compoundstmt  
+      compoundstmt  ->  {  stmts  }  
+{
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  *  simpleexpr  multexprprime  
+*
+      simpleexpr  ->  (  arithexpr  )  
+(
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  +  multexpr  arithexprprime  
++
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+)
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  +  multexpr  arithexprprime  
++
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  ¦Å  
+      ¦Å
+}
+      stmts  ->  stmt  stmts  
+      stmt  ->  ifstmt  
+      ifstmt  ->  if  (  boolexpr  )  then  stmt  else  stmt  
+if
+(
+      boolexpr  ->  arithexpr  boolop  arithexpr  
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+      boolop  ->  <=  
+<=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+)
+then
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  -  multexpr  arithexprprime  
+-
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+else
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  +  multexpr  arithexprprime  
++
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  /  simpleexpr  multexprprime  
+/
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  ifstmt  
+      ifstmt  ->  if  (  boolexpr  )  then  stmt  else  stmt  
+if
+(
+      boolexpr  ->  arithexpr  boolop  arithexpr  
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+      boolop  ->  ==  
+==
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+)
+then
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  -  multexpr  arithexprprime  
+-
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+else
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  -  multexpr  arithexprprime  
+-
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  /  simpleexpr  multexprprime  
+/
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  ifstmt  
+      ifstmt  ->  if  (  boolexpr  )  then  stmt  else  stmt  
+if
+(
+      boolexpr  ->  arithexpr  boolop  arithexpr  
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+      boolop  ->  >  
+>
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+)
+then
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  -  multexpr  arithexprprime  
+-
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+else
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  +  multexpr  arithexprprime  
++
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  stmt  stmts  
+      stmt  ->  ifstmt  
+      ifstmt  ->  if  (  boolexpr  )  then  stmt  else  stmt  
+if
+(
+      boolexpr  ->  arithexpr  boolop  arithexpr  
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+      boolop  ->  <  
+<
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+)
+then
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  +  multexpr  arithexprprime  
++
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+else
+      stmt  ->  assgstmt  
+      assgstmt  ->  ID  =  arithexpr  ;  
+ID
+=
+      arithexpr  ->  multexpr  arithexprprime  
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  ID  
+ID
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  -  multexpr  arithexprprime  
+-
+      multexpr  ->  simpleexpr  multexprprime  
+      simpleexpr  ->  NUM  
+NUM
+      multexprprime  ->  ¦Å  
+      ¦Å
+      arithexprprime  ->  ¦Å  
+      ¦Å
+;
+      stmts  ->  ¦Å  
+      ¦Å
+}
