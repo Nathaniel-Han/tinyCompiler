@@ -13,4 +13,4 @@ The specfic design proposals for the first two parts are in the `doc/design for 
 
 Specifically，the state transition graph for tinyCompilers is as follows:
 
-![Image text](http://github.com/Nathaniel1990/tinyCompiler/raw/master/doc/lex.jpg)
+![Image text](http://github.com/Nathaniel1990/tinyCompiler/raw/master/doc/lex.png)
